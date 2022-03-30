@@ -1,6 +1,3 @@
-# Translation from: https://github.com/robsoncouto/arduino-songs/blob/master/nevergonnagiveyouup/nevergonnagiveyouup.ino
-# for M5STACK
-
 from m5stack import *
 from m5ui import *
 from uiflow import *
@@ -195,8 +192,8 @@ for thisNote in range (0, notes*2, 2):
     elif divider < 0:
         noteDuration = (wholenote) / abs(divider)
         noteDuration = noteDuration * 1.5
-
-    speaker.tone(int(melody[thisNote]), int(noteDuration))
+    if int(melody[thisNote]) != 0:
+        speaker.tone(int(melody[thisNote]), int(noteDuration))
     breakDuration = int((noteDuration) * 0.1)
     wait_ms(int(breakDuration) - 5)
 
