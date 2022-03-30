@@ -5,10 +5,9 @@ import time
 from math import *
 
 setScreenColor(0x000000)
-rect1 = M5Rect(120, 75, 30, 80, 0x000000, 0x000000)
-rect2 = M5Rect(165, 75, 30, 80, 0x000000, 0x000000)
-rect3 = M5Rect(210, 75, 30, 80, 0x000000, 0x000000)
-image0 = M5Img(32, -16, "res/rickAstley.jpg", True)
+
+
+#image0 = M5Img(32, -16, "res/rickAstley.jpg", True)
 
 rgb.setColorAll(0x404040)
 speaker.setVolume(0.5)
